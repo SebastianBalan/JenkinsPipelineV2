@@ -14,14 +14,6 @@ pipeline {
                  }
              }               
          }
-         stage('Checkout code') {
-             steps {
-                 // Get some code from a GitHub repository
-                 git branch: 'main',
-                 credentialsId: '8256c430-4681-428d-9199-359ec61b5327',
-                 url: 'https://github.com/SebastianBalan/JenkinsPipelineV2'
-             }
-         }
          stage('Queue Configuration') {
             when {
                 equals expected : 'True', actual: TestsRunSuccessfully
