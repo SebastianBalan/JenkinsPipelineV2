@@ -3,7 +3,6 @@
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
-    "TestWindowsLibrary": "[1.0.125158834]",
     "UiPath.System.Activities": "[22.10.3]",
     "UiPath.Testing.Activities": "[22.10.0-preview]"
   },
@@ -19,6 +18,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
