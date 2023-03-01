@@ -3,6 +3,7 @@ pipeline {
      environment {
         RunTests = "True"
         TestsRunSuccessfully = "True"
+        UserKeyOrchID = credentials('userkeyOrch')
     }
      stages {
          stage('Initialize the variables') {
@@ -25,13 +26,11 @@ pipeline {
                                 $AccountName="aitraining",
                                 $ClientId="8DEv1AMNXczW3y4U15LL3jYf62jK93n5",
                                 $TenantName="UiPathDefault",
-                                $ConfigFile = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\PipelineGateEmail\\ConfigurationCSV.csv",
-                                $OrcUserKey = "${userKeyOrch}",
+                                $ConfigFile = ".\\ConfigurationCSV.csv",
+                                $OrcUserKey = "$($env:UserKeyOrchID)",
                                 $CloudDeployment = "Cloud"
                                )
                             
-                            Write-Output ${userKeyOrch}
-                            Write-Output $OrcUserKey
                             Write-Output "$(Get-Date -Format \'HH:mm:ss\') - STARTED - Queue Configuration"
                             Write-Output $ConfigFile
                             if (Get-Module | Where-Object {$_.Name -eq "UiPath.Powershell"}) 
