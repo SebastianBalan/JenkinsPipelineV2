@@ -22,7 +22,6 @@ pipeline {
             }
              steps {
                  echo 'Queue Configuration'
-                 withCredentials([string(credentialsId: 'userkeyOrch', variable: 'userKeyOrch')]) {
                  powershell '''param(
                                 $AccountName="aitraining",
                                 $ClientId="$($env:ClientID)",
@@ -99,7 +98,6 @@ pipeline {
                                 }
                             }
                             Write-Output "$(Get-Date -Format \'HH:mm:ss\') - COMPLETED - Queue Configuration"'''
-                }
              }
          }   
      }
