@@ -4,6 +4,7 @@ pipeline {
         RunTests = "True"
         TestsRunSuccessfully = "True"
         UserKeyOrchID = credentials('userkeyOrch')
+        ClientID = credentials('ClientIDOrch')
     }
      stages {
          stage('Initialize the variables') {
@@ -24,7 +25,7 @@ pipeline {
                  withCredentials([string(credentialsId: 'userkeyOrch', variable: 'userKeyOrch')]) {
                  powershell '''param(
                                 $AccountName="aitraining",
-                                $ClientId="8DEv1AMNXczW3y4U15LL3jYf62jK93n5",
+                                $ClientId="$($env:ClientID)",
                                 $TenantName="UiPathDefault",
                                 $ConfigFile = ".\\ConfigurationCSV.csv",
                                 $OrcUserKey = "$($env:UserKeyOrchID)",
