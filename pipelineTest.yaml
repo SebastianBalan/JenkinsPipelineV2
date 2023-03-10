@@ -29,7 +29,7 @@ pipeline {
                 
                     Write-Output "$(Get-Date -Format 'HH:mm:ss') - STARTED - Static Code Analyzer"
                     
-                    $Command = "dotnet $StandaloneAnalyzerPath analyze -p `'$ProjectFilePath`' --policy_file $PolicyfilePath"
+                    $Command = "dotnet $StandaloneAnalyzerPath analyze --project-path `'$ProjectFilePath`' --policy-file $PolicyfilePath"
                     Invoke-Expression $Command | Out-File -FilePath $OutputFilePath
                     $rp = Get-Content $OutputFilePath | foreach {$_.replace("#json","")}
                     
