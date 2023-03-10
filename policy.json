@@ -462,7 +462,7 @@
       "RuleId": "ST-USG-020",
       "IsEnabled": true,
       "Parameters": [],
-      "ErrorLevel": "Error"
+      "ErrorLevel": "Info"
     },
     {
       "RuleId": "ST-DBP-027",
