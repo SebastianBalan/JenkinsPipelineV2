@@ -22,7 +22,7 @@ pipeline {
                  powershell '''param(
                         $ProjectFilePath=".\\",
                         $OutputFilePath="$(Get-Date -Format \'yyyy-MM-dd-HH-mm-ss\')-Workflow-Analysis.json",
-                        $StandaloneAnalyzerPath = "C:\\sebi\\Projects\\KP\\Release\\net6.0-windows7.0\\UiPath.ProjectPackager.dll",
+                        $StandaloneAnalyzerPath = "C:\\sebi\\Projects\\KP\\Release\\net6.0-windows7.0\\UiPath.StandaloneCLI.dll",
                         $PolicyfilePath = ".\\kp.uipath.policy.config.json"
                     )
                     
