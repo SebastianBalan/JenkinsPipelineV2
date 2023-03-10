@@ -95,8 +95,10 @@ pipeline {
                     Write-Output "Total Number of Violations = $totalErros"
                     if ($totalErros > 0)
                     {
+                        Write-Output "din mai mare ca 0 = $totalErros"
                     	Exit 1
                     }else {
+                        Write-Output "din egal cu 0 = $totalErros"
                         Exit 0
                     }''')
                     echo "PowerShell script exited with status code ${statusCode}"
