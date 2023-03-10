@@ -1222,7 +1222,7 @@
               "Id": "ST-USG-020",
               "IsEnabled": true,
               "Parameters": [],
-              "ErrorLevel": "Info"
+              "ErrorLevel": "Error"
             },
             {
               "Id": "ST-DBP-027",
@@ -1874,7 +1874,7 @@
               "Id": "ST-USG-020",
               "IsEnabled": true,
               "Parameters": [],
-              "ErrorLevel": "Info"
+              "ErrorLevel": "Error"
             },
             {
               "Id": "ST-DBP-027",
