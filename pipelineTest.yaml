@@ -103,7 +103,7 @@ pipeline {
                     echo 'Inainte de buba'
                     if (statusCode != 0) {
                         currentBuild.result = 'FAILED'
-                        Error("Analyze failed")
+                        error("Analyze failed")
                         echo 'Buba'
                     }   
                 }
