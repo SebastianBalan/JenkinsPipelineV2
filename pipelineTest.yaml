@@ -99,7 +99,7 @@ pipeline {
                     }else {
                         Exit 0
                     }''')
-                    echo '$statusCode'
+                    echo "PowerShell script exited with status code ${statusCode}"
                     echo 'Inainte de buba'
                     if (statusCode != 0) {
                         currentBuild.result = 'FAILED'
