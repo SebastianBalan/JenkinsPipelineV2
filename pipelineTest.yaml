@@ -99,9 +99,11 @@ pipeline {
                     }else {
                         Exit 0
                     }'''
+
                     if (statusCode != 0) {
                         currentBuild.result = 'FAILED'
                     }   
+                }
              }
          }
          stage('Build code for Process') {
