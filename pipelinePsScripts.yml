@@ -30,7 +30,7 @@ pipeline {
                         $ProjectFilePath=".\\",
                         $OutputFilePath="$(Get-Date -Format \'yyyy-MM-dd-HH-mm-ss\')-Workflow-Analysis.json",
                         $StandaloneAnalyzerPath = "C:\\Users\\sebastian.balan\\Downloads\\bin\\Debug\\net6.0-windows7.0\\UiPath.ProjectPackager.dll",
-                        $PolicyfilePath = ".\\kp.uipath.policies.config.json"
+                        $PolicyfilePath = ".\\uipath.policy.Development.json"
                     )
                     
                 
