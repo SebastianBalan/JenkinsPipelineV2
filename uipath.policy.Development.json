@@ -213,7 +213,7 @@
       {
         "code-embedded-rules-config-rules": "ST-MRD-008",
         "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
+        "default-action": "Error",
         "parameters-embedded-rules-config-rules": []
       },
       {
