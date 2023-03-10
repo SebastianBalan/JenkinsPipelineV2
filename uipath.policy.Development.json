@@ -1,626 +1,1968 @@
 {
-  "product-name": "Development",
-  "policy-name": "Modern Policy - Studio3",
-  "data": {
-    "telemetry-redirection-options": {
-      "instrumentation-keys": ""
-    },
-    "enforce-checkin-before-publish": true,
-    "enforce-checkin-before-publish-allow-edit": false,
-    "enforce-repositories-config-allow-edit": false,
-    "enforce-repositories-config": {
-      "enforce-repositories-config-allow-save-local": null,
-      "enforce-repositories-config-allow-edit-repositories": true,
-      "enforce-repositories-config-repositories": []
-    },
-    "hide-starting-screen": false,
-    "feedback-enabled": true,
-    "require-user-publish-permitted-consecutive-runs": "",
-    "require-user-publish-dialog-message": null,
-    "require-user-publish-log-to-queue-queue-name": null,
-    "require-user-publish-log-to-queue-queue-folder": null,
-    "user-add-feeds": true,
-    "user-enable-feeds": true,
-    "append-orchestrator-feeds": true,
-    "default-package-source": [
-      {
-        "default-package-source-name": "Official",
-        "default-package-source-source": "https://www.myget.org/F/workflow",
-        "is-enabled-default-package-source": true
+  "Metadata": {
+    "Version": "1.0",
+    "LastUpdatedUtc": "2021-05-19T19:39:21.4391193Z",
+    "Availability": null
+  },
+  "Info": {
+    "Name": "KP Enterprise Governance Policy"
+  },
+  "Profiles": {
+    "Development": {
+      "Shell": {
+        "IsFeedbackEnabled": false,
+        "HideGettingStartedScreen": false
       },
-      {
-        "default-package-source-name": "Connect",
-        "default-package-source-source": "https://gallery.uipath.com/api/v2",
-        "is-enabled-default-package-source": true
+      "SourceControl": {
+        "CheckInBeforePublishParam": {
+          "AllowEdit": false,
+          "Value": false
+        }
       },
-      {
-        "default-package-source-name": "prestez",
-        "default-package-source-source": "https://prestez.pkgs.visualstudio.com/_packaging/prestez/nuget/v2",
-        "is-enabled-default-package-source": true
+      "Workflow": {
+        "DefaultProjectLanguageParam": {
+          "Value": "VisualBasic",
+          "AllowEdit": false
+        },
+        "DockedAnnotationsParam": {
+          "AllowEdit": false,
+          "Value": true
+        },
+        "IsCollapsedViewSlimParam": {
+          "AllowEdit": false,
+          "Value": false
+        },
+        "AnalyzeOnPublishParam": {
+          "AllowEdit": false,
+          "Value": true
+        },
+        "AnalyzeOnRunParam": {
+          "AllowEdit": false,
+          "Value": true
+        },
+        "AnalyzeRpaXamlsOnlyParam": {
+          "AllowEdit": false,
+          "Value": false
+        },
+        "AdditionalAnalyzerRulePathParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "DefaultProjectFolderParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "DefaultProcessPublishUrlParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "DefaultLibraryPublishUrlParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "DefaultTemplatePublishUrlParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "ModernBehaviorParam": {
+          "AllowEdit": false,
+          "Value": false
+        },
+        "ObjectRepositoryEnforcedParam": {
+          "AllowEdit": false,
+          "Value": false
+        }
       },
-      {
-        "default-package-source-name": "myGet",
-        "default-package-source-source": "https://www.myget.org/F/redfox/api/v2",
-        "is-enabled-default-package-source": true
+      "PackageManager": {
+        "AllowAddRemoveFeeds": false,
+        "AllowEnableDisableFeeds": false,
+        "AllowOrchestratorFeeds": true,
+        "Feeds": [
+          {
+            "Name": "Official",
+            "Source": "https://www.myget.org/F/workflow/",
+            "IsEnabled": true
+          },
+          {
+            "Name": "Connect",
+            "Source": "https://gallery.uipath.com/api/v2",
+            "IsEnabled": true
+          },
+          {
+            "Name": "Local",
+            "Source": "C:\\Program Files (x86)\\UiPath\\Studio\\.\\Packages",
+            "IsEnabled": false
+          },
+          {
+            "Name": "nuget.org",
+            "Source": "https://api.nuget.org/v3/index.json",
+            "IsEnabled": true
+          }
+        ]
+      },
+      "Core": {
+        "AllowEdit": true,
+        "ExperimentalFeaturesDictionary": {}
+      },
+      "Analyzer": {
+        "AllowEdit": false,
+        "ReferencedRulesConfigFile": null,
+        "EmbeddedRulesConfig": {
+          "Rules": [
+            {
+              "Id": "ST-NMG-001",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Regex",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-NMG-008",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Length",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-NMG-009",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-DBP-003",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-DBP-020",
+              "IsEnabled": false,
+              "Parameters": [
+                {
+                  "Name": "Excluded",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-002",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-USG-005",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "IncludeActivities",
+                  "Value": null
+                },
+                {
+                  "Name": "ExcludeActivities",
+                  "Value": null
+                },
+                {
+                  "Name": "IncludeProperties",
+                  "Value": null
+                },
+                {
+                  "Name": "ExcludeProperties",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-REL-006",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-017",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-PRR-001",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-PRR-002",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-PRR-003",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-PRR-004",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-DBP-013",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-DBP-021",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-REL-001",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "idxValue",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-SEC-004",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-SEC-010",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "blacklistApps",
+                  "Value": null
+                },
+                {
+                  "Name": "whitelistApps",
+                  "Value": null
+                },
+                {
+                  "Name": "blacklistUrls",
+                  "Value": null
+                },
+                {
+                  "Name": "whitelistUrls",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-USG-011",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "nonAllowedAttributes",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "MA-DBP-028",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "SY-USG-013",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "XL-DBP-027",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-DBP-030",
+              "IsEnabled": false,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "UX-DBP-029",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UX-SEC-010",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "blacklistApps",
+                  "Value": null
+                },
+                {
+                  "Name": "whitelistApps",
+                  "Value": null
+                },
+                {
+                  "Name": "blacklistUrls",
+                  "Value": null
+                },
+                {
+                  "Name": "whitelistUrls",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-NMG-004",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Threshold",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-NMG-005",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-NMG-002",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "InRegex",
+                  "Value": null
+                },
+                {
+                  "Name": "OutRegex",
+                  "Value": null
+                },
+                {
+                  "Name": "InOutRegex",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-NMG-011",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-NMG-012",
+              "IsEnabled": false,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-NMG-006",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-NMG-016",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Length",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-002",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "ArgumentsCount",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-007",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "LayersCount",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-DBP-023",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-025",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-028",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-024",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-026",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-007",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Threshold",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-MRD-004",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-008",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-005",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-011",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-MRD-009",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Threshold",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-USG-009",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-USG-026",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "ProhibitedActivities",
+                  "Value": null
+                },
+                {
+                  "Name": "AllowedActivities",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-PRR-004",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-SEC-009",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-SEC-007",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-SEC-008",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "VariableDepthUsage",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "UI-DBP-006",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-USG-024",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-USG-025",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-USG-020",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-DBP-027",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-USG-010",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-ANA-017",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "UI-ANA-016",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "UI-ANA-018",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-USG-014",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "ProhibitedPackages",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-USG-027",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "RequiredPackages",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-ANA-005",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-ANA-006",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            }
+          ],
+          "Counters": [
+            {
+              "Id": "ST-ANA-009",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-ANA-003",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            }
+          ]
+        }
+      },
+      "ObjectBrowser": {
+        "SendUiDescriptors": {
+          "AllowEdit": false,
+          "Value": false
+        }
       }
-    ],
-    "send-ui-descriptors": false,
-    "send-ui-descriptors-allow-edit": false,
-    "create-docked-annotations": true,
-    "create-docked-annotations-allow-edit": false,
-    "enforce-analyzer-before-run": false,
-    "enforce-analyzer-before-run-allow-edit": false,
-    "use-smart-file-paths": null,
-    "use-smart-file-paths-allow-edit": false,
-    "enable-activity-online-recommendations": true,
-    "enable-activity-online-recommendations-allow-edit": false,
-    "enforce-release-notes": false,
-    "enforce-analyzer-before-publish": false,
-    "enforce-analyzer-before-publish-allow-edit": false,
-    "enforce-analyzer-before-push": false,
-    "enforce-analyzer-before-push-allow-edit": false,
-    "is-collapsed-view-slim": false,
-    "is-collapsed-view-slim-allow-edit": false,
-    "analyze-rpa-xamls-only": false,
-    "analyze-rpa-xamls-only-allow-edit": false,
-    "modern-behavior": true,
-    "modern-behavior-allow-edit": false,
-    "object-repository-enforced": false,
-    "object-repository-enforced-allow-edit": false,
-    "default-project-language": "VisualBasic",
-    "default-project-language-allow-edit": true,
-    "default-project-framework": "Classic",
-    "default-project-framework-allow-edit": true,
-    "allowed-project-frameworks": {
-      "Classic": true,
-      "Modern": true,
-      "CrossPlatform": true
     },
-    "additional-analyzer-rule-path": null,
-    "additional-analyzer-rule-path-allow-edit": true,
-    "project-path": null,
-    "project-path-allow-edit": true,
-    "publish-process-url": null,
-    "publish-process-url-allow-edit": true,
-    "publish-library-url": null,
-    "publish-library-url-allow-edit": true,
-    "publish-templates-url": null,
-    "publish-templates-url-allow-edit": true,
-    "export-analyzer-results": false,
-    "export-analyzer-results-allow-edit": false,
-    "use-connection-service": false,
-    "use-connection-service-allow-edit": false,
-    "analyzer-allow-edit": true,
-    "referenced-rules-config-file": null,
-    "embedded-rules-config-rules": [
-      {
-        "code-embedded-rules-config-rules": "MA-DBP-028",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
+    "Business": {
+      "Shell": {
+        "IsFeedbackEnabled": true,
+        "HideGettingStartedScreen": false
       },
-      {
-        "code-embedded-rules-config-rules": "ST-ANA-005",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
+      "SourceControl": {
+        "CheckInBeforePublishParam": {
+          "AllowEdit": false,
+          "Value": false
+        }
       },
-      {
-        "code-embedded-rules-config-rules": "ST-ANA-006",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
+      "Workflow": {
+        "DefaultProjectLanguageParam": {
+          "Value": "VisualBasic",
+          "AllowEdit": false
+        },
+        "DockedAnnotationsParam": {
+          "AllowEdit": false,
+          "Value": true
+        },
+        "IsCollapsedViewSlimParam": {
+          "AllowEdit": false,
+          "Value": false
+        },
+        "AnalyzeOnPublishParam": {
+          "AllowEdit": false,
+          "Value": true
+        },
+        "AnalyzeOnRunParam": {
+          "AllowEdit": false,
+          "Value": true
+        },
+        "AnalyzeRpaXamlsOnlyParam": {
+          "AllowEdit": false,
+          "Value": false
+        },
+        "AdditionalAnalyzerRulePathParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "DefaultProjectFolderParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "DefaultProcessPublishUrlParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "DefaultLibraryPublishUrlParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "DefaultTemplatePublishUrlParam": {
+          "AllowEdit": false,
+          "Value": "\\\\cs.msds.kp.org\\NCAL\\ptc\\Userdir11\\A563826\\UiPath\\.templates"
+        },
+        "ModernBehaviorParam": {
+          "AllowEdit": false,
+          "Value": false
+        },
+        "ObjectRepositoryEnforcedParam": {
+          "AllowEdit": false,
+          "Value": false
+        }
       },
-      {
-        "code-embedded-rules-config-rules": "ST-DBP-002",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": [
+      "PackageManager": {
+        "AllowAddRemoveFeeds": false,
+        "AllowEnableDisableFeeds": false,
+        "AllowOrchestratorFeeds": true,
+        "Feeds": [
           {
-            "key-embedded-rules-config-rules": "ArgumentsCount",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-DBP-003",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-DBP-007",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "LayersCount",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-DBP-021",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-DBP-023",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-DBP-024",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-DBP-025",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-DBP-026",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-DBP-027",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-DBP-028",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-MRD-002",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-MRD-004",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-MRD-005",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-MRD-007",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "Threshold",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-MRD-008",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-MRD-009",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "Threshold",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-MRD-011",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "SR-MRD-017",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-NMG-001",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "Regex",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-NMG-002",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "InRegex",
-            "value-use-default-value-rules": true
+            "Name": "Official",
+            "Source": "https://www.myget.org/F/workflow/",
+            "IsEnabled": true
           },
           {
-            "key-embedded-rules-config-rules": "OutRegex",
-            "value-use-default-value-rules": true
+            "Name": "Connect",
+            "Source": "https://gallery.uipath.com/api/v2",
+            "IsEnabled": false
           },
           {
-            "key-embedded-rules-config-rules": "InOutRegex",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-NMG-004",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "Threshold",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-NMG-005",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-NMG-006",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-NMG-008",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "Length",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-NMG-009",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-NMG-011",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-NMG-016",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "Length",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-PRR-004",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-REL-006",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-SEC-007",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-SEC-008",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "VariableDepthUsage",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-SEC-009",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "Excluded",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-USG-005",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "ScanOnly",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-USG-009",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-USG-010",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-USG-014",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "ProhibitedPackages",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-USG-020",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-USG-024",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-USG-025",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-USG-026",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "ProhibitedActivities",
-            "value-use-default-value-rules": true
+            "Name": "Local",
+            "Source": "C:\\Program Files (x86)\\UiPath\\Studio\\.\\Packages",
+            "IsEnabled": false
           },
           {
-            "key-embedded-rules-config-rules": "AllowedActivities",
-            "value-use-default-value-rules": true
+            "Name": "nuget.org",
+            "Source": "https://api.nuget.org/v3/index.json",
+            "IsEnabled": true
           }
         ]
       },
-      {
-        "code-embedded-rules-config-rules": "ST-USG-027",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "RequiredPackages",
-            "value-use-default-value-rules": true
-          }
-        ]
+      "Core": {
+        "AllowEdit": true,
+        "ExperimentalFeaturesDictionary": {}
       },
-      {
-        "code-embedded-rules-config-rules": "UI-ANA-016",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Info",
-        "parameters-embedded-rules-config-rules": []
+      "Analyzer": {
+        "AllowEdit": false,
+        "ReferencedRulesConfigFile": null,
+        "EmbeddedRulesConfig": {
+          "Rules": [
+            {
+              "Id": "ST-NMG-001",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Regex",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-NMG-008",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Length",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-NMG-009",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-DBP-003",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-DBP-020",
+              "IsEnabled": false,
+              "Parameters": [
+                {
+                  "Name": "Excluded",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-002",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-USG-005",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "IncludeActivities",
+                  "Value": null
+                },
+                {
+                  "Name": "ExcludeActivities",
+                  "Value": null
+                },
+                {
+                  "Name": "IncludeProperties",
+                  "Value": null
+                },
+                {
+                  "Name": "ExcludeProperties",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-REL-006",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-017",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-PRR-001",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-PRR-002",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-PRR-003",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-PRR-004",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-DBP-013",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-DBP-021",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-REL-001",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "idxValue",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-SEC-004",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-SEC-010",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "blacklistApps",
+                  "Value": null
+                },
+                {
+                  "Name": "whitelistApps",
+                  "Value": null
+                },
+                {
+                  "Name": "blacklistUrls",
+                  "Value": "appsdev.kp.org;appsTEST.kp.org;apps.kp.org;onelinkfscm.kp.org;onelink-fscm-uat.appl.kp.org"
+                },
+                {
+                  "Name": "whitelistUrls",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "UI-USG-011",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "nonAllowedAttributes",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "MA-DBP-028",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "SY-USG-013",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "XL-DBP-027",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-DBP-030",
+              "IsEnabled": false,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "UX-DBP-029",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UX-SEC-010",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "blacklistApps",
+                  "Value": null
+                },
+                {
+                  "Name": "whitelistApps",
+                  "Value": null
+                },
+                {
+                  "Name": "blacklistUrls",
+                  "Value": "appsdev.kp.org;appsTEST.kp.org;apps.kp.org;onelinkfscm.kp.org;onelink-fscm-uat.appl.kp.org"
+                },
+                {
+                  "Name": "whitelistUrls",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-NMG-004",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Threshold",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-NMG-005",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-NMG-002",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "InRegex",
+                  "Value": null
+                },
+                {
+                  "Name": "OutRegex",
+                  "Value": null
+                },
+                {
+                  "Name": "InOutRegex",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-NMG-011",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-NMG-012",
+              "IsEnabled": false,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-NMG-006",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-NMG-016",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Length",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-002",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "ArgumentsCount",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-007",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "LayersCount",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-DBP-023",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-025",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-028",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-024",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-026",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-007",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Threshold",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-MRD-004",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-008",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-005",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-011",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-009",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Threshold",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-USG-009",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-USG-026",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "ProhibitedActivities",
+                  "Value": null
+                },
+                {
+                  "Name": "AllowedActivities",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-PRR-004",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-SEC-009",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-SEC-007",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-SEC-008",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "VariableDepthUsage",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "UI-DBP-006",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-USG-024",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-USG-025",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-USG-020",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-DBP-027",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-USG-010",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-ANA-017",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "UI-ANA-016",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "UI-ANA-018",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-USG-014",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "ProhibitedPackages",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-USG-027",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "RequiredPackages",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-ANA-005",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-ANA-006",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            }
+          ],
+          "Counters": [
+            {
+              "Id": "ST-ANA-009",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-ANA-003",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            }
+          ]
+        }
       },
-      {
-        "code-embedded-rules-config-rules": "UI-ANA-017",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Info",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "UI-ANA-018",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Info",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "UI-DBP-006",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "UI-DBP-013",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "UI-PRR-001",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "UI-PRR-002",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "UI-PRR-003",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "UI-PRR-004",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "UI-REL-001",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "idxValue",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "UI-SEC-004",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "UI-SEC-010",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "blacklistApps",
-            "value-use-default-value-rules": false,
-            "value-embedded-rules-config-rules": "\"C:\\Windows\\System32\\notepad2.exe\""
-          },
-          {
-            "key-embedded-rules-config-rules": "whitelistApps",
-            "value-use-default-value-rules": true
-          },
-          {
-            "key-embedded-rules-config-rules": "blacklistUrls",
-            "value-use-default-value-rules": true
-          },
-          {
-            "key-embedded-rules-config-rules": "whitelistUrls",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "UI-USG-011",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "nonAllowedAttributes",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "UX-DBP-029",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "UX-SEC-010",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "blacklistApps",
-            "value-use-default-value-rules": false,
-            "value-embedded-rules-config-rules": "\"C:\\Windows\\System32\\notepad.exe\""
-          },
-          {
-            "key-embedded-rules-config-rules": "whitelistApps",
-            "value-use-default-value-rules": true
-          },
-          {
-            "key-embedded-rules-config-rules": "blacklistUrls",
-            "value-use-default-value-rules": true
-          },
-          {
-            "key-embedded-rules-config-rules": "whitelistUrls",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "XL-DBP-027",
-        "is-enabled-embedded-rules-config-rules": true,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-DBP-020",
-        "is-enabled-embedded-rules-config-rules": false,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": [
-          {
-            "key-embedded-rules-config-rules": "Excluded",
-            "value-use-default-value-rules": true
-          }
-        ]
-      },
-      {
-        "code-embedded-rules-config-rules": "ST-NMG-012",
-        "is-enabled-embedded-rules-config-rules": false,
-        "default-action": "Warning",
-        "parameters-embedded-rules-config-rules": []
-      },
-      {
-        "code-embedded-rules-config-rules": "UI-DBP-030",
-        "is-enabled-embedded-rules-config-rules": false,
-        "default-action": "Error",
-        "parameters-embedded-rules-config-rules": []
+      "ObjectBrowser": {
+        "SendUiDescriptors": {
+          "AllowEdit": false,
+          "Value": false
+        }
       }
-    ],
-    "embedded-rules-config-counter": [
-      {
-        "code-embedded-rules-config-counter": "ST-ANA-003",
-        "is-enabled-embedded-rules-config-counter": true,
-        "parameters-embedded-rules-config-counter": []
+    },
+    "StudioPro": {
+      "Shell": {
+        "IsFeedbackEnabled": true,
+        "HideGettingStartedScreen": false
       },
-      {
-        "code-embedded-rules-config-counter": "ST-ANA-009",
-        "is-enabled-embedded-rules-config-counter": true,
-        "parameters-embedded-rules-config-counter": []
+      "SourceControl": {
+        "CheckInBeforePublishParam": {
+          "AllowEdit": false,
+          "Value": false
+        }
+      },
+      "Workflow": {
+        "DefaultProjectLanguageParam": {
+          "Value": "VisualBasic",
+          "AllowEdit": false
+        },
+        "DockedAnnotationsParam": {
+          "AllowEdit": false,
+          "Value": true
+        },
+        "IsCollapsedViewSlimParam": {
+          "AllowEdit": false,
+          "Value": false
+        },
+        "AnalyzeOnPublishParam": {
+          "AllowEdit": false,
+          "Value": true
+        },
+        "AnalyzeOnRunParam": {
+          "AllowEdit": false,
+          "Value": true
+        },
+        "AnalyzeRpaXamlsOnlyParam": {
+          "AllowEdit": false,
+          "Value": false
+        },
+        "AdditionalAnalyzerRulePathParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "DefaultProjectFolderParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "DefaultProcessPublishUrlParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "DefaultLibraryPublishUrlParam": {
+          "AllowEdit": false,
+          "Value": null
+        },
+        "DefaultTemplatePublishUrlParam": {
+          "AllowEdit": false,
+          "Value": "\\\\cs.msds.kp.org\\NCAL\\ptc\\Userdir11\\A563826\\UiPath\\.templates"
+        },
+        "ModernBehaviorParam": {
+          "AllowEdit": false,
+          "Value": false
+        },
+        "ObjectRepositoryEnforcedParam": {
+          "AllowEdit": false,
+          "Value": false
+        }
+      },
+      "PackageManager": {
+        "AllowAddRemoveFeeds": false,
+        "AllowEnableDisableFeeds": false,
+        "AllowOrchestratorFeeds": true,
+        "Feeds": [
+          {
+            "Name": "Official",
+            "Source": "https://www.myget.org/F/workflow/",
+            "IsEnabled": true
+          },
+          {
+            "Name": "Connect",
+            "Source": "https://gallery.uipath.com/api/v2",
+            "IsEnabled": true
+          },
+          {
+            "Name": "Local",
+            "Source": "C:\\Program Files (x86)\\UiPath\\Studio\\.\\Packages",
+            "IsEnabled": false
+          },
+          {
+            "Name": "nuget.org",
+            "Source": "https://api.nuget.org/v3/index.json",
+            "IsEnabled": true
+          }
+        ]
+      },
+      "Core": {
+        "AllowEdit": true,
+        "ExperimentalFeaturesDictionary": {}
+      },
+      "Analyzer": {
+        "AllowEdit": false,
+        "ReferencedRulesConfigFile": null,
+        "EmbeddedRulesConfig": {
+          "Rules": [
+            {
+              "Id": "ST-NMG-001",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Regex",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-NMG-008",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Length",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-NMG-009",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-DBP-003",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-DBP-020",
+              "IsEnabled": false,
+              "Parameters": [
+                {
+                  "Name": "Excluded",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-002",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-USG-005",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "IncludeActivities",
+                  "Value": null
+                },
+                {
+                  "Name": "ExcludeActivities",
+                  "Value": null
+                },
+                {
+                  "Name": "IncludeProperties",
+                  "Value": null
+                },
+                {
+                  "Name": "ExcludeProperties",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-REL-006",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-017",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-PRR-001",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-PRR-002",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-PRR-003",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-PRR-004",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-DBP-013",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-DBP-021",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-REL-001",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "idxValue",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-SEC-004",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-SEC-010",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "blacklistApps",
+                  "Value": null
+                },
+                {
+                  "Name": "whitelistApps",
+                  "Value": null
+                },
+                {
+                  "Name": "blacklistUrls",
+                  "Value": null
+                },
+                {
+                  "Name": "whitelistUrls",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-USG-011",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "nonAllowedAttributes",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "MA-DBP-028",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "SY-USG-013",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "XL-DBP-027",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-DBP-030",
+              "IsEnabled": false,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "UX-DBP-029",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UX-SEC-010",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "blacklistApps",
+                  "Value": null
+                },
+                {
+                  "Name": "whitelistApps",
+                  "Value": null
+                },
+                {
+                  "Name": "blacklistUrls",
+                  "Value": null
+                },
+                {
+                  "Name": "whitelistUrls",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-NMG-004",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Threshold",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-NMG-005",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-NMG-002",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "InRegex",
+                  "Value": null
+                },
+                {
+                  "Name": "OutRegex",
+                  "Value": null
+                },
+                {
+                  "Name": "InOutRegex",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-NMG-011",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-NMG-012",
+              "IsEnabled": false,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-NMG-006",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-NMG-016",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Length",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-002",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "ArgumentsCount",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-007",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "LayersCount",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-DBP-023",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-025",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-028",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-024",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-DBP-026",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-007",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Threshold",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-MRD-004",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-008",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-005",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-011",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-MRD-009",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "Threshold",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-USG-009",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-USG-026",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "ProhibitedActivities",
+                  "Value": null
+                },
+                {
+                  "Name": "AllowedActivities",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-PRR-004",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-SEC-009",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-SEC-007",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-SEC-008",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "VariableDepthUsage",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "UI-DBP-006",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-USG-024",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-USG-025",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-USG-020",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-DBP-027",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "ST-USG-010",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            },
+            {
+              "Id": "UI-ANA-017",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "UI-ANA-016",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "UI-ANA-018",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-USG-014",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "ProhibitedPackages",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-USG-027",
+              "IsEnabled": true,
+              "Parameters": [
+                {
+                  "Name": "RequiredPackages",
+                  "Value": null
+                }
+              ],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-ANA-005",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Error"
+            },
+            {
+              "Id": "ST-ANA-006",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            }
+          ],
+          "Counters": [
+            {
+              "Id": "ST-ANA-009",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Info"
+            },
+            {
+              "Id": "ST-ANA-003",
+              "IsEnabled": true,
+              "Parameters": [],
+              "ErrorLevel": "Warning"
+            }
+          ]
+        }
+      },
+      "ObjectBrowser": {
+        "SendUiDescriptors": {
+          "AllowEdit": false,
+          "Value": false
+        }
       }
-    ]
+    }
   }
 }
