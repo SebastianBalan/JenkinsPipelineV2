@@ -2,7 +2,7 @@
   "Version": 2,
   "Rules": [
     {
-      "Id": "ST-NMG-001",
+      "RuleId": "ST-NMG-001",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -13,7 +13,7 @@
       "ErrorLevel": "Info"
     },
     {
-      "Id": "ST-NMG-008",
+      "RuleId": "ST-NMG-008",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -24,19 +24,19 @@
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-NMG-009",
+      "RuleId": "ST-NMG-009",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Info"
     },
     {
-      "Id": "ST-DBP-003",
+      "RuleId": "ST-DBP-003",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Error"
     },
     {
-      "Id": "ST-DBP-020",
+      "RuleId": "ST-DBP-020",
       "IsEnabled": false,
       "Parameters": [
         {
@@ -47,13 +47,13 @@
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-MRD-002",
+      "RuleId": "ST-MRD-002",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Info"
     },
     {
-      "Id": "ST-USG-005",
+      "RuleId": "ST-USG-005",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -76,55 +76,55 @@
       "ErrorLevel": "Error"
     },
     {
-      "Id": "ST-REL-006",
+      "RuleId": "ST-REL-006",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-MRD-017",
+      "RuleId": "ST-MRD-017",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "UI-PRR-001",
+      "RuleId": "UI-PRR-001",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "UI-PRR-002",
+      "RuleId": "UI-PRR-002",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "UI-PRR-003",
+      "RuleId": "UI-PRR-003",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "UI-PRR-004",
+      "RuleId": "UI-PRR-004",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "UI-DBP-013",
+      "RuleId": "UI-DBP-013",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Error"
     },
     {
-      "Id": "ST-DBP-021",
+      "RuleId": "ST-DBP-021",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "UI-REL-001",
+      "RuleId": "UI-REL-001",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -135,13 +135,13 @@
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "UI-SEC-004",
+      "RuleId": "UI-SEC-004",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "UI-SEC-010",
+      "RuleId": "UI-SEC-010",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -164,7 +164,7 @@
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "UI-USG-011",
+      "RuleId": "UI-USG-011",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -175,37 +175,37 @@
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "MA-DBP-028",
+      "RuleId": "MA-DBP-028",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "SY-USG-013",
+      "RuleId": "SY-USG-013",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Error"
     },
     {
-      "Id": "XL-DBP-027",
+      "RuleId": "XL-DBP-027",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "UI-DBP-030",
+      "RuleId": "UI-DBP-030",
       "IsEnabled": false,
       "Parameters": [],
       "ErrorLevel": "Error"
     },
     {
-      "Id": "UX-DBP-029",
+      "RuleId": "UX-DBP-029",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "UX-SEC-010",
+      "RuleId": "UX-SEC-010",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -228,7 +228,7 @@
       "ErrorLevel": "Error"
     },
     {
-      "Id": "ST-NMG-004",
+      "RuleId": "ST-NMG-004",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -239,13 +239,13 @@
       "ErrorLevel": "Info"
     },
     {
-      "Id": "ST-NMG-005",
+      "RuleId": "ST-NMG-005",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Error"
     },
     {
-      "Id": "ST-NMG-002",
+      "RuleId": "ST-NMG-002",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -264,25 +264,25 @@
       "ErrorLevel": "Info"
     },
     {
-      "Id": "ST-NMG-011",
+      "RuleId": "ST-NMG-011",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Info"
     },
     {
-      "Id": "ST-NMG-012",
+      "RuleId": "ST-NMG-012",
       "IsEnabled": false,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-NMG-006",
+      "RuleId": "ST-NMG-006",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Error"
     },
     {
-      "Id": "ST-NMG-016",
+      "RuleId": "ST-NMG-016",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -293,7 +293,7 @@
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-DBP-002",
+      "RuleId": "ST-DBP-002",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -304,7 +304,7 @@
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-DBP-007",
+      "RuleId": "ST-DBP-007",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -315,37 +315,37 @@
       "ErrorLevel": "Error"
     },
     {
-      "Id": "ST-DBP-023",
+      "RuleId": "ST-DBP-023",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-DBP-025",
+      "RuleId": "ST-DBP-025",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-DBP-028",
+      "RuleId": "ST-DBP-028",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-DBP-024",
+      "RuleId": "ST-DBP-024",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-DBP-026",
+      "RuleId": "ST-DBP-026",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-MRD-007",
+      "RuleId": "ST-MRD-007",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -356,31 +356,31 @@
       "ErrorLevel": "Info"
     },
     {
-      "Id": "ST-MRD-004",
+      "RuleId": "ST-MRD-004",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-MRD-008",
+      "RuleId": "ST-MRD-008",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-MRD-005",
+      "RuleId": "ST-MRD-005",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-MRD-011",
+      "RuleId": "ST-MRD-011",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-MRD-009",
+      "RuleId": "ST-MRD-009",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -391,13 +391,13 @@
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-USG-009",
+      "RuleId": "ST-USG-009",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-USG-026",
+      "RuleId": "ST-USG-026",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -412,25 +412,25 @@
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-PRR-004",
+      "RuleId": "ST-PRR-004",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-SEC-009",
+      "RuleId": "ST-SEC-009",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-SEC-007",
+      "RuleId": "ST-SEC-007",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Error"
     },
     {
-      "Id": "ST-SEC-008",
+      "RuleId": "ST-SEC-008",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -441,61 +441,61 @@
       "ErrorLevel": "Error"
     },
     {
-      "Id": "UI-DBP-006",
+      "RuleId": "UI-DBP-006",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Error"
     },
     {
-      "Id": "ST-USG-024",
+      "RuleId": "ST-USG-024",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Info"
     },
     {
-      "Id": "ST-USG-025",
+      "RuleId": "ST-USG-025",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-USG-020",
+      "RuleId": "ST-USG-020",
       "IsEnabled": true,
       "Parameters": [],
-      "ErrorLevel": "Error"
+      "ErrorLevel": "Info"
     },
     {
-      "Id": "ST-DBP-027",
+      "RuleId": "ST-DBP-027",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "ST-USG-010",
+      "RuleId": "ST-USG-010",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
     },
     {
-      "Id": "UI-ANA-017",
+      "RuleId": "UI-ANA-017",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Info"
     },
     {
-      "Id": "UI-ANA-016",
+      "RuleId": "UI-ANA-016",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Info"
     },
     {
-      "Id": "UI-ANA-018",
+      "RuleId": "UI-ANA-018",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Info"
     },
     {
-      "Id": "ST-USG-014",
+      "RuleId": "ST-USG-014",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -506,7 +506,7 @@
       "ErrorLevel": "Error"
     },
     {
-      "Id": "ST-USG-027",
+      "RuleId": "ST-USG-027",
       "IsEnabled": true,
       "Parameters": [
         {
@@ -517,13 +517,13 @@
       "ErrorLevel": "Error"
     },
     {
-      "Id": "ST-ANA-005",
+      "RuleId": "ST-ANA-005",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Error"
     },
     {
-      "Id": "ST-ANA-006",
+      "RuleId": "ST-ANA-006",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
@@ -531,13 +531,13 @@
   ],
   "Counters": [
     {
-      "Id": "ST-ANA-009",
+      "RuleId": "ST-ANA-009",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Info"
     },
     {
-      "Id": "ST-ANA-003",
+      "RuleId": "ST-ANA-003",
       "IsEnabled": true,
       "Parameters": [],
       "ErrorLevel": "Warning"
