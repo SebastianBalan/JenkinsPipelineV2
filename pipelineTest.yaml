@@ -99,9 +99,10 @@ pipeline {
                     }else {
                         Exit 0
                     }'''
-
+                    echo 'Inainte de buba'
                     if (statusCode != 0) {
                         currentBuild.result = 'FAILED'
+                        echo 'Buba'
                     }   
                 }
              }
