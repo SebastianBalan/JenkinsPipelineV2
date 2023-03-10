@@ -485,7 +485,7 @@
               "Id": "ST-MRD-011",
               "IsEnabled": true,
               "Parameters": [],
-              "ErrorLevel": "Error"
+              "ErrorLevel": "Warning"
             },
             {
               "Id": "ST-MRD-009",
