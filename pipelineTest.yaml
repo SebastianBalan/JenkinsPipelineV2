@@ -19,8 +19,7 @@ pipeline {
          stage('Standalone Analyzer') {
              steps {
                  echo 'Standalone Analyzer'
-                 script {
-                    def statusCode = powershell(returnStatus: true, script: '''param(
+                 powershell '''param(
                         $ProjectFilePath=".\\",
                         $OutputFilePath="$(Get-Date -Format \'yyyy-MM-dd-HH-mm-ss\')-Workflow-Analysis.json",
                         $StandaloneAnalyzerPath = "C:\\sebi\\Projects\\KP\\Release\\net6.0-windows7.0\\UiPath.StandaloneCLI.dll",
@@ -98,15 +97,7 @@ pipeline {
                     	Exit 1
                     }else {
                         Exit 0
-                    }''')
-                    echo "PowerShell script exited with status code ${statusCode}"
-                    echo 'Inainte de buba'
-                    if (statusCode != 0) {
-                        currentBuild.result = 'FAILED'
-                        error("Analyze failed")
-                        echo 'Buba'
-                    }   
-                }
+                    }'''
              }
          }
          stage('Build code for Process') {
