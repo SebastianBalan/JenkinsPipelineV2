@@ -1,5 +1,5 @@
 
-#
+// Pipeline Script that consists of tasks which use UiPath connector. If al the tests run successfully, deploy the code, the assets and the queues.
 
 pipeline {
      agent any
