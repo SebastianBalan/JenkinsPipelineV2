@@ -12,10 +12,19 @@ pipeline {
              steps{
                  script{
                      PROCESS_OUTPUT_PATH = "${WORKSPACE}\\Process\\Output\\${BUILD_NUMBER}"
+                     TEST_PROJECT_PATH = "${WORKSPACE}\\project.json"
                      TEST_OUTPUT_PATH = "${WORKSPACE}\\test-reports"
                      ASSETS_FILE_PATH = "${WORKSPACE}\\assets.csv"
                  }
              }               
+         }
+         stage('Checkout code') {
+             steps {
+                 // Get some code from a GitHub repository
+                 git branch: 'main',
+                 credentialsId: '8256c430-4681-428d-9199-359ec61b5327',
+                 url: 'https://github.com/SebastianBalan/JenkinsPipelineV2'
+             }
          }
          stage('Test code') {
             when {
@@ -30,7 +39,7 @@ pipeline {
                      orchestratorTenant: 'UiPathDefault',
                      parametersFilePath: '',
                      testResultsOutputPath: 'TEST_OUTPUT_PATH',
-                     testTarget: TestProject(environments: '', testProjectPath: 'project.json')
+                     testTarget: TestProject(environments: '', testProjectPath: TEST_PROJECT_PATH),
                      timeout: 500,
                      traceLevel: 'Verbose'
                  )
