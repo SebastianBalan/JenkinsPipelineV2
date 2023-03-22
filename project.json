@@ -1,5 +1,5 @@
 {
-  "name": "JenkinsPipeline",
+  "name": "JenkinsPipelineV2",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
