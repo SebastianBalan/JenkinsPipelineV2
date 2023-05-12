@@ -8744,8 +8744,8 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "JenkinsPipeline",
-      "projectName": "JenkinsPipeline",
+      "projectUniqueName": "JenkinsPipelineV2",
+      "projectName": "JenkinsPipelineV2",
       "projectPath": "C:\\sebi\\UiPath\\JenkinsPipelineV2\\.local",
       "packagesPath": "C:\\UiPathPackages",
       "outputPath": "C:\\sebi\\UiPath\\JenkinsPipelineV2\\.local"
